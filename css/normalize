@@ -425,29 +425,3 @@ td,
 th {
   padding: 0;
 }
-
-/*checking my work*/
-body {
-    background-color: LightGray;
-}
-div {
-    border: 1px solid Chocolate;
-}
-
-/*Navigation Section*/
-.topNav {
-  background-color: #fff;
-}
-
-.content {
-width: 970px;
-height: 70px;
-margin: 0 auto;
-display: inline-block;
-
-}
-
-.links {
-
-}
-
