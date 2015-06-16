@@ -1,41 +1,106 @@
 /*checking my work*/
 body {
     background-color: LightGray;
+    border: 1px solid black;
 }
 div {
     border: 1px solid green;
 }
 
 
-/*Navigation Section */
+/* Navigation Section */
 .topNav {
 	background-color: #fff;
- 
+	border: 1px solid gray;
+}
+
+.topNav .links {
+	float: right;
+	font-family: 'roboto', sans-serif;
+	color: #838994;
+	font-size: 16px;
+	margin-top: 10px;
+	-webkit-font-smoothing: antialiased;
+	border: 1px solid red;
+}
+
+.topNav .links li{
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.topNav .links .active {
+	color: #333;
+	margin-left: 25px;
+	font-weight: 500;
 }
 
 .topNav > .content {
 	width: 970px;
 	height: 70px;
 	margin: 0 auto;
-	font-family: 'Roboto', sans-serif; 
-	font-size: 16px; 
-	color: #838994; 
+	 
 	letter-spacing: 0.03em;
-
 }
 
+.topNav .links li:hover{
+	cursor: pointer;
+	color: #333;
+}
 .logo {
 	padding: 0px 15px;
 	height: 70px;
 	border: 1px solid blue;
 }
 
-.links {
-	float: right;
-	display: inline;
-	border: 1px solid red;
-	display: inline-block;
-	list-style-type: none;
+.intro {
+	background-image: url('../images/first-background.jpg');
+	background-position: center bottom; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-color: #333;
+	height: 45.938rem;
+	border: 3px solid yellow;
 }
 
+.content {
+	color:#fff;
+	font-family: 'roboto';
+	font-weight: 500;
+	text-align: center;
+	vertical-align: middle;
+	border: 2px solid blue;
+	line-height: 50px;
+}
 
+.content h1{
+	font-size: 40px;
+	padding-top: 200px;
+
+}
+
+}/*-----------------------links-----------------------*/
+
+/* unvisited link */
+body a:link {
+  color: #333;
+  text-decoration: none;
+}
+
+/* visited link */
+body a:visited {
+    color: #333;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #dcdbeb;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #a6a4cb;
+    text-decoration: none;
+}
