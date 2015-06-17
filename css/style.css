@@ -1,27 +1,47 @@
 /*checking my work*/
 body {
-    background-color: LightGray;
-    border: 1px solid black;
-}
-div {
-    border: 1px solid green;
+    /*background-color: LightGray;*/
+    font-family; 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
+div {
+    /*border: 1px solid green;*/
+}
+
+.content {
+	padding: 0 0.938rem;
+	margin: 0 auto;
+	min-width: 37.5rem;
+}
 
 /* Navigation Section */
 .topNav {
 	background-color: #fff;
-	border: 1px solid gray;
+	position: fixed;
+	width: 100%;
+	border-bottom: 1px solid #DDD;
+	z-index: 9999;
+
+}
+
+.topNav > .content {
+	height: 4.375rem;
+}
+
+.topNav .logo{
+	height: 40px;
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 10px;
 }
 
 .topNav .links {
 	float: right;
-	font-family: 'roboto', sans-serif;
 	color: #838994;
 	font-size: 16px;
-	margin-top: 10px;
-	-webkit-font-smoothing: antialiased;
-	border: 1px solid red;
+	margin-top: 25px;
 }
 
 .topNav .links li{
@@ -30,29 +50,16 @@ div {
 }
 
 .topNav .links .active {
-	color: #333;
-	margin-left: 25px;
+	color: #4c5058;
 	font-weight: 500;
-}
-
-.topNav > .content {
-	width: 970px;
-	height: 70px;
-	margin: 0 auto;
-	 
-	letter-spacing: 0.03em;
 }
 
 .topNav .links li:hover{
 	cursor: pointer;
 	color: #333;
 }
-.logo {
-	padding: 0px 15px;
-	height: 70px;
-	border: 1px solid blue;
-}
 
+/*Introduction Section, below top Nav*/
 .intro {
 	background-image: url('../images/first-background.jpg');
 	background-position: center bottom; 
@@ -60,26 +67,43 @@ div {
 	background-size: cover;
 	background-color: #333;
 	height: 45.938rem;
-	border: 3px solid yellow;
+	overflow: auto;
 }
 
-.content {
-	color:#fff;
-	font-family: 'roboto';
-	font-weight: 500;
+.intro h1,
+.intro h3 {
+	color: #fff;
 	text-align: center;
-	vertical-align: middle;
-	border: 2px solid blue;
-	line-height: 50px;
+	font-weight: 300;
 }
 
-.content h1{
-	font-size: 40px;
-	padding-top: 200px;
-
+.intro h1 {
+	margin-top: 17.5rem;
+	font-size: 3.125rem;
 }
 
-}/*-----------------------links-----------------------*/
+.intro h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+
+/*Buttons*/
+
+.intro .big-button ,
+button{
+	color: #fff;
+	text-align: center;
+	width: 9.688rem;
+	background-color: #f15a29;
+	border-color: #f15a29;
+	border-style: none;
+	border-radius: 4px;
+	padding: .5rem 1.5rem;
+	font-size: 1.125rem;
+	margin: 0 auto;
+	}
+
+/*-----------------------links-----------------------*/
 
 /* unvisited link */
 body a:link {
