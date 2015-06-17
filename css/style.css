@@ -105,9 +105,15 @@ button{
 
 button:hover {
     background-color: #d9400e;
-    border-color: #cf3d0e;
+    border-color: #d9400e;
     cursor: pointer;
 }
+
+/*--Icons with Explanation--*/
+.explanation{
+
+}
+
 
 /*-----------------------links-----------------------*/
 
